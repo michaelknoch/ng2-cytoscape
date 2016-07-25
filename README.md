@@ -11,11 +11,10 @@ import {NgCytoscape} from "ng2-cytoscape/dist";
     template: '<ng2-cytoscape [elements]="graphData"></ng2-cytoscape>',
     styles: [`
       ng2-cytoscape {
-      height: calc(100vh - 210px);
-      float: left;
-      width: 100%;
-      position: relative;
-      margin-top: 5px;
+        height: 100vh;
+        float: left;
+        width: 100%;
+        position: relative;
     }`],
 })
 
