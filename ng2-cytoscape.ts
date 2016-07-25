@@ -27,7 +27,7 @@ export class NgCytoscape implements OnChanges {
         this.layout = this.layout || {
                 name: 'grid',
                 directed: true,
-                padding: 20
+                padding: 0
             };
 
         this.zoom = this.zoom || {
