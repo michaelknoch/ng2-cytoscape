@@ -1,7 +1,7 @@
 # ng2-cytoscape
 
 ## example usage
-```
+```javascript
 import {Component} from '@angular/core';
 import {NgCytoscape} from "ng2-cytoscape/dist";
 
