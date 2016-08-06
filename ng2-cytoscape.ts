@@ -31,8 +31,8 @@ export class NgCytoscape implements OnChanges {
             };
 
         this.zoom = this.zoom || {
-                min: -1,
-                max: 2
+                min: 0.1,
+                max: 1.5
             };
 
         this.style = this.style || cytoscape.stylesheet()
