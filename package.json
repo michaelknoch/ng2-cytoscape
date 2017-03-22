@@ -5,8 +5,7 @@
   "repository": "https://github.com/michaelknoch/ng2-cytoscape",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc",
-    "postinstall": "typings install && tsc"
+    "tsc": "tsc"
   },
   "author": "Michael Knoch",
   "license": "ISC",
