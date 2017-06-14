@@ -1,13 +1,37 @@
 # ng2-cytoscape
 
-## example usage
-```javascript
+## Example Usage
+
+### In your `app.module.ts`
+Add the import clause to import the module `NgCytoscapeModule`
+
+```typescript
+import {NgCytoscapeModule} from "ng2-cytoscape/dist";
+```
+
+Add the `NgCytoscapeModule` to the imports array of the `NgModule`.
+
+```typescript
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgCytoscapeModule // <= Add this
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+### In the component you want to use NgCytoscape
+```typescript
 import {Component} from '@angular/core';
-import {NgCytoscape} from "ng2-cytoscape/dist";
 
 @Component({
     selector: 'graph',
-    directives: [NgCytoscape],
     template: '<ng2-cytoscape [elements]="graphData"></ng2-cytoscape>',
     styles: [`
       ng2-cytoscape {
@@ -17,7 +41,6 @@ import {NgCytoscape} from "ng2-cytoscape/dist";
         position: relative;
     }`],
 })
-
 export class Graph {
 
     graphData = {
