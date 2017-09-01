@@ -10,8 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var NgCytoscape = (function () {
-    function NgCytoscape(el) {
+var NgCytoscapeComponent = (function () {
+    function NgCytoscapeComponent(el) {
         this.el = el;
         this.layout = this.layout || {
             name: 'grid',
@@ -61,10 +61,10 @@ var NgCytoscape = (function () {
             'text-opacity': 0
         });
     }
-    NgCytoscape.prototype.ngOnChanges = function () {
+    NgCytoscapeComponent.prototype.ngOnChanges = function () {
         this.render();
     };
-    NgCytoscape.prototype.render = function () {
+    NgCytoscapeComponent.prototype.render = function () {
         jQuery(this.el.nativeElement).cytoscape({
             layout: this.layout,
             minZoom: this.zoom.min,
@@ -73,31 +73,31 @@ var NgCytoscape = (function () {
             elements: this.elements,
         });
     };
-    return NgCytoscape;
+    return NgCytoscapeComponent;
 }());
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], NgCytoscape.prototype, "elements", void 0);
+], NgCytoscapeComponent.prototype, "elements", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], NgCytoscape.prototype, "style", void 0);
+], NgCytoscapeComponent.prototype, "style", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], NgCytoscape.prototype, "layout", void 0);
+], NgCytoscapeComponent.prototype, "layout", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], NgCytoscape.prototype, "zoom", void 0);
-NgCytoscape = __decorate([
+], NgCytoscapeComponent.prototype, "zoom", void 0);
+NgCytoscapeComponent = __decorate([
     core_1.Component({
         selector: 'ng2-cytoscape',
         template: '<div id="cy"></div>',
         styles: ["#cy {\n        height: 100%;\n        width: 100%;\n        position: absolute;\n        left: 0;\n        top: 0;\n    }"]
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
-], NgCytoscape);
-exports.NgCytoscape = NgCytoscape;
+], NgCytoscapeComponent);
+exports.NgCytoscapeComponent = NgCytoscapeComponent;
 //# sourceMappingURL=ng2-cytoscape.js.map

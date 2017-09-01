@@ -10,14 +10,16 @@
   "author": "Michael Knoch",
   "license": "ISC",
   "dependencies": {
-    "@angular/core": "4.2.2",
-    "@angular/common": "4.2.2",
-    "rxjs": "5.0.1",
-    "zone.js": "0.8.12",
-    "cytoscape": "^2.7.16"
+    "@angular/common": "^4.3.5",
+    "@angular/core": "^4.3.5",
+    "@types/jquery": "^3.2.12",
+    "cytoscape": "^2.7.24",
+    "jquery": "^3.2.1",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.17"
   },
   "devDependencies": {
-    "typescript": "2.2.1",
+    "typescript": "^2.2.1",
     "typings": "^1.5.0"
   }
 }

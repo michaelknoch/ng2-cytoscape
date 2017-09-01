@@ -1,1 +1,1 @@
-export * from './ng2-cytoscape';
+export * from './app.module';
