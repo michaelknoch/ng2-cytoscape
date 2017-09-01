@@ -1,5 +1,5 @@
 import { OnChanges, ElementRef } from '@angular/core';
-export declare class NgCytoscape implements OnChanges {
+export declare class NgCytoscapeComponent implements OnChanges {
     private el;
     elements: any;
     style: any;

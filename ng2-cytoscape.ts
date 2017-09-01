@@ -1,5 +1,4 @@
-import { Component, OnChanges, ElementRef, Input, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnChanges, ElementRef, Input } from '@angular/core';
 declare var jQuery: any;
 declare var cytoscape: any;
 
@@ -89,10 +88,3 @@ export class NgCytoscapeComponent implements OnChanges {
     }
 
 }
-
-@NgModule({
-    imports: [CommonModule],
-    declarations: [NgCytoscapeComponent],
-    exports: [NgCytoscapeComponent]
-})
-export class NgCytoscapeModule { }
